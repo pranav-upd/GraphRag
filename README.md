@@ -75,7 +75,7 @@ pip install -e ".[dev]"
 docker compose up -d
 ```
 
-Verify Neo4j is running at `http://localhost:7474` (default credentials: `neo4j` / `graphrag_local`).
+Verify Neo4j is running at `http://localhost:7474` (default credentials: Username: `neo4j` / Password: `graphrag_local`).
 ### Complete each exercise in src/graphrag as they are covered in in the course
 
 ### 3. Run Pytest Gates Step-by-Step
