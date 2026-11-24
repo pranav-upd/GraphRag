@@ -55,16 +55,7 @@ This is the **starter workspace** for the 105-minute guided project course. Comp
 #### Python - https://www.python.org/downloads/
 #### (Note - In case you are using Docker Desktop, Kindly ensure it is running before you proceed with the project :D )
 
-### 1. Start Local Neo4j
-
-```bash
-cp .env.example .env
-docker compose up -d
-```
-
-Verify Neo4j is running at `http://localhost:7474` (default credentials: `neo4j` / `graphrag_local`).
-
-### 2. Install Python Dependencies
+### 1. Install Python Dependencies
 
 ```CLI
 git clone https://github.com/pranav-upd/GraphRag.git
@@ -77,13 +68,21 @@ graphrag_venv\Scripts\Activate.ps1
 
 pip install -e ".[dev]"
 ```
+
+### 2. Start Local Neo4j
+
+```CLI
+docker compose up -d
+```
+
+Verify Neo4j is running at `http://localhost:7474` (default credentials: `neo4j` / `graphrag_local`).
 ### Complete each exercise in src/graphrag as they are covered in in the course
 
 ### 3. Run Pytest Gates Step-by-Step
 
 Run each gate as you complete the corresponding task:
 
-```bash
+```CLI
 pytest tests/test_01_schema.py
 pytest tests/test_02_embedder.py
 pytest tests/test_03_extractor.py
