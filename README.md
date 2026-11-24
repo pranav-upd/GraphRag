@@ -53,7 +53,7 @@ This is the **starter workspace** for the 105-minute guided project course. Comp
 #### Ensure You have Docker and Python installed in your System. Otherwise please refer to the following.
 #### Docker - https://docs.docker.com/get-docker/
 #### Python - https://www.python.org/downloads/
-#### (Note - In case you are using Docker Desktop, Kindly ensure it is running before you proceed with the project :D
+#### (Note - In case you are using Docker Desktop, Kindly ensure it is running before you proceed with the project :D )
 
 ### 1. Start Local Neo4j
 
