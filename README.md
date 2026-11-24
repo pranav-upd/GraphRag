@@ -67,7 +67,7 @@ git clone https://github.com/pranav-upd/GraphRag.git
 cd GraphRag
 python -m venv graphrag_venv
 # Windows (PowerShell):
-.venv\Scripts\Activate.ps1
+graphrag_venv\Scripts\Activate.ps1
 # macOS / Linux:
 # source .venv/bin/activate
 
