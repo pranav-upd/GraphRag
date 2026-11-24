@@ -62,7 +62,8 @@ Verify Neo4j is running at `http://localhost:7474` (default credentials: `neo4j`
 
 ### 2. Install Python Dependencies
 
-```bash
+```CLI
+git clone https://github.com/pranav-upd/GraphRag.git
 python -m venv .venv
 # Windows (PowerShell):
 .venv\Scripts\Activate.ps1
@@ -71,6 +72,7 @@ python -m venv .venv
 
 pip install -e ".[dev]"
 ```
+### Complete each exercise in src/graphrag as they are covered in in the course
 
 ### 3. Run Pytest Gates Step-by-Step
 
