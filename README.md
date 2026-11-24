@@ -69,7 +69,7 @@ python -m venv graphrag_venv
 # Windows (PowerShell):
 graphrag_venv\Scripts\Activate.ps1
 # macOS / Linux:
-# source .venv/bin/activate
+# source graphrag_venv/bin/activate
 
 pip install -e ".[dev]"
 ```
