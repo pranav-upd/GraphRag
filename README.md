@@ -64,7 +64,8 @@ Verify Neo4j is running at `http://localhost:7474` (default credentials: `neo4j`
 
 ```CLI
 git clone https://github.com/pranav-upd/GraphRag.git
-python -m venv .venv
+cd GraphRag
+python -m venv graphrag_venv
 # Windows (PowerShell):
 .venv\Scripts\Activate.ps1
 # macOS / Linux:
