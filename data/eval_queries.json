@@ -1,0 +1,79 @@
+[
+  {
+    "query_id": "q01",
+    "query": "Which deployment ultimately caused the checkout-api HTTP 504 timeout surge in us-east-1?",
+    "relevant_doc_ids": [
+      "inc_01_checkout_timeout",
+      "inc_02_pgbouncer_pool_exhaustion",
+      "inc_03_connection_leak_deploy"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q02",
+    "query": "How did a feature-flag-service configuration change trigger HTTP 401 token rejections in auth-gateway?",
+    "relevant_doc_ids": [
+      "inc_04_auth_token_storm",
+      "inc_05_redis_eviction_spike",
+      "inc_06_ttl_config_regression"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q03",
+    "query": "What upstream search job caused inventory-worker to lag behind on events-kafka-us-east?",
+    "relevant_doc_ids": [
+      "inc_07_kafka_consumer_lag",
+      "inc_08_broker_disk_saturation",
+      "inc_09_search_reindex_storm"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q04",
+    "query": "Why did fraud-engine experience a P99 latency spike after a node drain in ap-south-1?",
+    "relevant_doc_ids": [
+      "inc_10_fraud_latency_spike",
+      "inc_11_cockroach_leaseholder_imbalance"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q05",
+    "query": "Which responder handled both the checkout-api timeouts and the eu-west-1 Envoy mTLS certificate expiry?",
+    "relevant_doc_ids": [
+      "inc_01_checkout_timeout",
+      "inc_12_cross_region_failover",
+      "inc_15_tls_cert_expiry"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q06",
+    "query": "How were billing-scheduler duplicate charges linked to the webhook retry storm in notification-hub?",
+    "relevant_doc_ids": [
+      "inc_13_billing_duplicate_charges",
+      "inc_14_webhook_retry_loop"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q07",
+    "query": "Which incidents involving Maya Lin affected orders-pg-primary and ledger-service?",
+    "relevant_doc_ids": [
+      "inc_02_pgbouncer_pool_exhaustion",
+      "inc_03_connection_leak_deploy"
+    ],
+    "hops": 2
+  },
+  {
+    "query_id": "q08",
+    "query": "Which incidents handled by Devon Brooks involved notification-hub?",
+    "relevant_doc_ids": [
+      "inc_05_redis_eviction_spike",
+      "inc_06_ttl_config_regression",
+      "inc_14_webhook_retry_loop"
+    ],
+    "hops": 2
+  }
+]

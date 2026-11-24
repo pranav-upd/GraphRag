@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-graphrag"
+version = "0.1.0"
+description = "100% local GraphRAG in Python using Neo4j, GLiNER, and Sentence Transformers"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "neo4j>=5.20.0",
+    "sentence-transformers>=3.0.0",
+    "gliner>=0.2.10",
+    "tiktoken>=0.7.0",
+    "protobuf>=4.25.0",
+    "python-dotenv>=1.0.1",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
